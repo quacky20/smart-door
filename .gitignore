@@ -1,0 +1,5 @@
+/__pycache__
+/known_faces
+face_data.db
+face_index.faiss
+facenet.tflite
