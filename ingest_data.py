@@ -3,6 +3,7 @@ import cv2
 import dlib
 from embedding import *
 from face_recognition import *
+from face_utils import largest_face, extract_face
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 IMAGE_SRC_DIR = os.path.join(SCRIPT_DIR, "known_faces")
@@ -26,14 +27,10 @@ def process_static_image(img_path):
         print(f"  [Warning] No face detected in: {img_path}")
         return None
     
-    face = max(faces, key=lambda f: (f.right() - f.left()) * (f.bottom() - f.top()))
+    face = largest_face(faces)
+    cropped_face = extract_face(frame, face)
 
-    h, w, _ = frame.shape
-    x1, y1 = max(0, face.left()), max(0, face.top())
-    x2, y2 = min(w, face.right()), min(h, face.bottom())
-    cropped_face = frame[y1:y2, x1:x2]
-
-    if cropped_face.size == 0:
+    if cropped_face is None or cropped_face.size == 0:
         return None
 
     return get_face_embedding(cropped_face)

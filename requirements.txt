@@ -1,8 +1,6 @@
 ai-edge-litert
 dlib
+faiss-cpu
 numpy
 opencv-contrib-python
 pillow
-torch
-torchaudio
-torchvision

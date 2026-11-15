@@ -32,20 +32,21 @@ def register_face(name, embedding_vector):
     faiss.write_index(index, INDEX_FILE)
     print(f"Successfully registered {name} with ID {faiss_id}")
     
-def recognize_face(current_embedding, threshold = 0.6):
+def recognize_face(current_embedding, threshold=MATCH_THRESHOLD_L2):
+    """Return (name, l2_distance). FAISS IndexFlatL2 returns *squared* L2, so convert first."""
     vector = np.array(current_embedding, dtype=np.float32).reshape(1, -1)
-    
-    distances, indices = index.search(vector, k = 1)
-    
+
+    distances, indices = index.search(vector, k=1)
+
     best_match_id = indices[0][0]
-    distance = distances[0][0]
-    
+    distance = float(np.sqrt(max(distances[0][0], 0.0)))
+
     if best_match_id == -1 or distance > threshold:
         return "Unknown", distance
-    
+
     cursor.execute("SELECT name FROM mapping WHERE faiss_id = ?", (int(best_match_id),))
     row = cursor.fetchone()
-    
+
     if row:
         return row[0], distance
     return "Unknown", distance
