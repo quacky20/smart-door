@@ -1,6 +1,8 @@
 /__pycache__
+/.venv
 /known_faces
 face_data.db
 face_index.faiss
 facenet.tflite
 shape_predictor_5_face_landmarks.dat
+/test_faces

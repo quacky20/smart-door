@@ -1,0 +1,252 @@
+{
+  "samples": 2549,
+  "correct": 1447,
+  "accuracy": 0.5676735974892114,
+  "precision_macro_known": 0.9354838709677419,
+  "recall_macro_known": 0.5743333198813888,
+  "f1_macro_known": 0.6783671802555975,
+  "precision_weighted_known": 0.9454688112985484,
+  "recall_weighted_known": 0.5676735974892114,
+  "f1_weighted_known": 0.6774145309054243,
+  "balanced_accuracy_known": 0.5743333198813888,
+  "detection_rate": 0.9862691251471165,
+  "no_face_count": 35,
+  "known_identity_accuracy": 0.5676735974892114,
+  "unknown_prediction_count": 1102,
+  "mean_distance_detected": 0.7497219673091917,
+  "median_distance_detected": 0.7467508316040039,
+  "r2_integer_label_encoding": -0.5915144706378412,
+  "r2_note": "R\u00b2 is not a valid nominal-classification metric; this is included only as requested using deterministic integer identity labels.",
+  "per_class": {
+    "Akshay Kumar": {
+      "support": 50,
+      "precision": 1.0,
+      "recall": 0.06,
+      "f1": 0.11320754716981131
+    },
+    "Alexandra Daddario": {
+      "support": 92,
+      "precision": 1.0,
+      "recall": 0.32608695652173914,
+      "f1": 0.4918032786885246
+    },
+    "Alia Bhatt": {
+      "support": 79,
+      "precision": 1.0,
+      "recall": 0.569620253164557,
+      "f1": 0.7258064516129034
+    },
+    "Amitabh Bachchan": {
+      "support": 74,
+      "precision": 1.0,
+      "recall": 0.918918918918919,
+      "f1": 0.9577464788732395
+    },
+    "Andy Samberg": {
+      "support": 92,
+      "precision": 1.0,
+      "recall": 0.7391304347826086,
+      "f1": 0.85
+    },
+    "Anushka Sharma": {
+      "support": 68,
+      "precision": 1.0,
+      "recall": 0.7205882352941176,
+      "f1": 0.8376068376068375
+    },
+    "Billie Eilish": {
+      "support": 98,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666
+    },
+    "Brad Pitt": {
+      "support": 120,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "Camila Cabello": {
+      "support": 87,
+      "precision": 1.0,
+      "recall": 0.45977011494252873,
+      "f1": 0.6299212598425197
+    },
+    "Charlize Theron": {
+      "support": 78,
+      "precision": 1.0,
+      "recall": 0.24358974358974358,
+      "f1": 0.3917525773195876
+    },
+    "Claire Holt": {
+      "support": 96,
+      "precision": 1.0,
+      "recall": 0.3958333333333333,
+      "f1": 0.5671641791044776
+    },
+    "Courtney Cox": {
+      "support": 80,
+      "precision": 1.0,
+      "recall": 0.675,
+      "f1": 0.8059701492537313
+    },
+    "Dwayne Johnson": {
+      "support": 61,
+      "precision": 1.0,
+      "recall": 0.819672131147541,
+      "f1": 0.9009009009009009
+    },
+    "Elizabeth Olsen": {
+      "support": 71,
+      "precision": 1.0,
+      "recall": 0.352112676056338,
+      "f1": 0.5208333333333333
+    },
+    "Ellen Degeneres": {
+      "support": 75,
+      "precision": 1.0,
+      "recall": 0.9733333333333334,
+      "f1": 0.9864864864864865
+    },
+    "Henry Cavill": {
+      "support": 106,
+      "precision": 1.0,
+      "recall": 0.2641509433962264,
+      "f1": 0.41791044776119407
+    },
+    "Hrithik Roshan": {
+      "support": 101,
+      "precision": 1.0,
+      "recall": 0.24752475247524752,
+      "f1": 0.3968253968253968
+    },
+    "Hugh Jackman": {
+      "support": 112,
+      "precision": 1.0,
+      "recall": 0.7321428571428571,
+      "f1": 0.8453608247422679
+    },
+    "Jessica Alba": {
+      "support": 108,
+      "precision": 1.0,
+      "recall": 0.3333333333333333,
+      "f1": 0.5
+    },
+    "Kashyap": {
+      "support": 30,
+      "precision": 1.0,
+      "recall": 0.6333333333333333,
+      "f1": 0.7755102040816326
+    },
+    "Lisa Kudrow": {
+      "support": 70,
+      "precision": 1.0,
+      "recall": 0.9571428571428572,
+      "f1": 0.9781021897810218
+    },
+    "Margot Robbie": {
+      "support": 72,
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1": 0.8
+    },
+    "Marmik": {
+      "support": 19,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "Natalie Portman": {
+      "support": 105,
+      "precision": 1.0,
+      "recall": 0.7904761904761904,
+      "f1": 0.8829787234042553
+    },
+    "Priyanka Chopra": {
+      "support": 102,
+      "precision": 1.0,
+      "recall": 0.9509803921568627,
+      "f1": 0.9748743718592965
+    },
+    "Robert Downey Jr": {
+      "support": 113,
+      "precision": 1.0,
+      "recall": 0.3185840707964602,
+      "f1": 0.4832214765100671
+    },
+    "Roger Federer": {
+      "support": 77,
+      "precision": 1.0,
+      "recall": 0.8181818181818182,
+      "f1": 0.9
+    },
+    "Tom Cruise": {
+      "support": 58,
+      "precision": 1.0,
+      "recall": 0.8793103448275862,
+      "f1": 0.9357798165137614
+    },
+    "Unknown": {
+      "support": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "Vijay Deverakonda": {
+      "support": 115,
+      "precision": 1.0,
+      "recall": 0.7304347826086957,
+      "f1": 0.8442211055276382
+    },
+    "Virat Kohli": {
+      "support": 49,
+      "precision": 1.0,
+      "recall": 0.9591836734693877,
+      "f1": 0.9791666666666666
+    },
+    "Zac Efron": {
+      "support": 91,
+      "precision": 1.0,
+      "recall": 0.7692307692307693,
+      "f1": 0.8695652173913044
+    }
+  },
+  "labels": [
+    "Akshay Kumar",
+    "Alexandra Daddario",
+    "Alia Bhatt",
+    "Amitabh Bachchan",
+    "Andy Samberg",
+    "Anushka Sharma",
+    "Billie Eilish",
+    "Brad Pitt",
+    "Camila Cabello",
+    "Charlize Theron",
+    "Claire Holt",
+    "Courtney Cox",
+    "Dwayne Johnson",
+    "Elizabeth Olsen",
+    "Ellen Degeneres",
+    "Henry Cavill",
+    "Hrithik Roshan",
+    "Hugh Jackman",
+    "Jessica Alba",
+    "Kashyap",
+    "Lisa Kudrow",
+    "Margot Robbie",
+    "Marmik",
+    "Natalie Portman",
+    "Priyanka Chopra",
+    "Robert Downey Jr",
+    "Roger Federer",
+    "Tom Cruise",
+    "Unknown",
+    "Vijay Deverakonda",
+    "Virat Kohli",
+    "Zac Efron"
+  ],
+  "elapsed_seconds": 886.8595490999869,
+  "images_per_second": 2.8741867893138275,
+  "threshold_l2": 0.7746,
+  "skipped_unlabeled_files": 0
+}
