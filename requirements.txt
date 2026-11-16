@@ -3,4 +3,3 @@ dlib
 faiss-cpu
 numpy
 opencv-contrib-python
-pillow
